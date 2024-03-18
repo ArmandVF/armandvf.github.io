@@ -20,7 +20,6 @@ const { title, description } = Astro.props;
 		<MainHead title={title} description={description} />
 	</head>
 	<body>
-		
 		<div class="stack backgrounds">
 			<Nav />
 			<slot />
@@ -49,11 +48,10 @@ const { title, description } = Astro.props;
 			}
 
 			:root.theme-dark {
-				--bg-image-main: url('/assets/backgrounds/dark-dust-bg.jpg');
-				--bg-image-main-curves: url('/assets/backgrounds/dark-dust-bg.jpg');
+				--bg-image-main: url('/assets/backgrounds/bg-main-dark-800w.jpg');
+				--bg-image-main-curves: url('/assets/backgrounds/bg-main-dark.svg');
 				--bg-svg-blend-mode: darken;
 				--bg-blend-mode: lighten;
-				--background-attachment: fixed;
 			}
 
 			/* These backgrounds are displayed below the fold, so we lazy load them
@@ -64,21 +62,18 @@ const { title, description } = Astro.props;
 				--bg-image-footer: url('/assets/backgrounds/bg-footer-light-800w.jpg');
 			}
 			:root.loaded.theme-dark {
-				--bg-image-subtle-1: url('/assets/backgrounds/dark-dust-bg.jpg');
-				--bg-image-subtle-2: url('/assets/backgrounds/dark-dust-bg.jpg');
-				--bg-image-footer: url('/assets/backgrounds/dark-dust-bg.jpg');
-				--background-attachment: fixed;
+				--bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-800w.jpg');
+				--bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-800w.jpg');
+				--bg-image-footer: url('/assets/backgrounds/bg-footer-dark-800w.jpg');
 			}
 
 			@media (min-width: 50em) {
 				:root {
 					--bg-scale: 1;
 					--bg-image-main: url('/assets/backgrounds/bg-main-light-1440w.jpg');
-					--background-attachment: fixed;
 				}
 				:root.theme-dark {
-					--bg-image-main: url('/assets/backgrounds/dark-dust-bg.jpg');
-					--background-attachment: fixed;
+					--bg-image-main: url('/assets/backgrounds/bg-main-dark-1440w.jpg');
 				}
 
 				:root.loaded {
@@ -87,10 +82,9 @@ const { title, description } = Astro.props;
 					--bg-image-footer: url('/assets/backgrounds/bg-footer-light-1440w.jpg');
 				}
 				:root.loaded.theme-dark {
-					--bg-image-subtle-1: url('/assets/backgrounds/dark-dust-bg.jpg');
-					--bg-image-subtle-2: url('/assets/backgrounds/dark-dust-bg.jpg');
-					--bg-image-footer: url('/assets/backgrounds/dark-dust-bg.jpg');
-					--background-attachment: fixed;
+					--bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-1440w.jpg');
+					--bg-image-subtle-2: url('/assets/backgrounds/bg-subtle-2-dark-1440w.jpg');
+					--bg-image-footer: url('/assets/backgrounds/bg-footer-dark-1440w.jpg');
 				}
 			}
 
