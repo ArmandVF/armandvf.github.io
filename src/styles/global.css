@@ -16,11 +16,11 @@
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
 	--gray-999: #ffffff;
 
-	--accent-light: #5EA0B9;
-	--accent-regular: #00607A;
-	--accent-dark: #526981;
-	--accent-overlay: #EBE5E4;
-	--accent-subtle-overlay: #15131C;
+	--accent-light: #2C295D;
+	--accent-regular: #1B153C;
+	--accent-dark: #131030;
+	--accent-overlay: #25214C;
+	--accent-subtle-overlay: #15143A;
 	--accent-text-over: var(--gray-999);
 
 	--link-color: var(--accent-regular);
@@ -88,11 +88,11 @@
 	--gray-999-basis: 225, 31%, 5%;
 	--gray-999: #090b11;
 
-	--accent-light: #76557B;
-	--accent-regular: #4D2C43;
-	--accent-dark: #272647;
-	--accent-overlay: var(--accent-regular);
-	--accent-subtle-overlay: var(--accent-dark);
+	--accent-light: #C4DEF3;
+	--accent-regular: #D4BFD3;
+	--accent-dark: #F38395;
+	--accent-overlay: #CEC9DF;
+	--accent-subtle-overlay: #DDAFC3;
 	--accent-text-over: var(--gray-0);
 
 	--link-color: var(--accent-dark);
