@@ -225,6 +225,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		list-style: none;
 		padding: 2rem;
 		background-color: var(--gray-999);
+		background: var(--bg-image-main);
 		border-bottom: 1px solid var(--gray-800);
 	}
 
@@ -247,6 +248,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		gap: 0.75rem;
 		padding: 1.5rem 2rem 1.5rem 1.5rem;
 		background-color: var(--gray-999);
+		background: var(--bg-image-main);
 		border-radius: 0 0 0.75rem 0.75rem;
 		box-shadow: var(--shadow-lg);
 	}
@@ -328,7 +330,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 		.link:hover,
 		.link:focus {
-			color: var(--gray-100);
+			color: var(--gray-400);
 			background-color: var(--accent-subtle-overlay);
 		}
 
@@ -344,6 +346,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			align-items: center;
 			padding: 0;
 			background-color: transparent;
+			background: none;
 			box-shadow: none;
 		}
 
