@@ -41,10 +41,7 @@ const { title, description } = Astro.props;
 				--bg-image-footer: url('/src/backgrounds/noon-to-dusk.jpg');
 				--bg-svg-blend-mode: overlay;
 				--bg-blend-mode: darken;
-				--bg-image-aspect-ratio: 2.25;
-				--bg-scale: 1.68;
-				--bg-aspect-ratio: calc(var(--bg-image-aspect-ratio) / var(--bg-scale));
-				--bg-gradient-size: calc(var(--bg-scale) * 100%);
+				--bg-image-size: 100% 100%;
 			}
 
 			:root.theme-dark {
@@ -55,6 +52,7 @@ const { title, description } = Astro.props;
 				--bg-image-footer: url('/src/backgrounds/lawrencium.jpg');
 				--bg-svg-blend-mode: darken;
 				--bg-blend-mode: lighten;
+				--bg-image-size: 100% 100%;
 			}
 
 			/* These backgrounds are displayed below the fold, so we lazy load them
@@ -63,28 +61,34 @@ const { title, description } = Astro.props;
 				--bg-image-subtle-1: url('/src/backgrounds/noon-to-dusk.jpg');
 				--bg-image-subtle-2: url('/src/backgrounds/noon-to-dusk.jpg');
 				--bg-image-footer: url('/src/backgrounds/noon-to-dusk.jpg');
+				--bg-image-size: 100% 100%;
 			}
 			:root.loaded.theme-dark {
 				--bg-image-subtle-1: url('/src/backgrounds/lawrencium.jpg');
 				--bg-image-subtle-2: url('/src/backgrounds/lawrencium.jpg');
 				--bg-image-footer: url('/src/backgrounds/lawrencium.jpg');
+				--bg-image-size: 100% 100%;
 			}
 
 			@media (min-width: 50em) {
 				:root {
-					--bg-scale: 1;
+					/*--bg-scale: 1;*/
+					--bg-image-size: 100% 100%;
 					--bg-image-main: url('/src/backgrounds/noon-to-dusk.jpg');
 				}
 				:root.theme-dark {
+					--bg-image-size: 100% 100%;
 					--bg-image-main: url('/src/backgrounds/lawrencium.jpg');
 				}
 
 				:root.loaded {
+					--bg-image-size: 100% 100%;
 					--bg-image-subtle-1: url('/src/backgrounds/noon-to-dusk.jpg');
 					--bg-image-subtle-2: url('/src/backgrounds/noon-to-dusk.jpg');
 					--bg-image-footer: url('/src/backgrounds/noon-to-dusk.jpg');
 				}
 				:root.loaded.theme-dark {
+					--bg-image-size: 100% 100%;
 					--bg-image-subtle-1: url('/src/backgrounds/lawrencium.jpg');
 					--bg-image-subtle-2: url('/src/backgrounds/lawrencium.jpg');
 					--bg-image-footer: url('/src/backgrounds/lawrencium.jpg');
@@ -95,7 +99,7 @@ const { title, description } = Astro.props;
 				min-height: 100%;
 				isolation: isolate;
 				background: var(--bg-image-main);
-				background-size: var(--bg-image-main-size);
+				background-size: 100% 100%;
 			}
 			@media (forced-colors: active) {
 				/* Deactivate custom backgrounds for high contrast users. */
